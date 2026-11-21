@@ -1,0 +1,3 @@
+{"change_id":"CH8","lease_id":"L-live","at":"2026-05-02","kind":"notice","value":"2026-05-15"}
+{"change_id":"CH9","lease_id":"L-live","at":"2026-05-15","kind":"vacated","value":true}
+{"change_id":"CH10","lease_id":"L-live","at":"2026-05-20","kind":"repair_accepted","value":false}

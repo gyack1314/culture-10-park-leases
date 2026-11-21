@@ -1,0 +1,3 @@
+{"fund_id":"F-A","building":"A","purpose":"fitout","amount":5000}
+{"fund_id":"F-B","building":"B","purpose":"fitout","amount":60000}
+{"fund_id":"F-G","building":"*","purpose":"operations","amount":10000}

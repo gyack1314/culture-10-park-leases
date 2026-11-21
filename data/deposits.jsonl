@@ -1,0 +1,2 @@
+{"deposit_id":"DP8","tenant_id":"T08","lease_id":"L-live","amount":15000,"release_conditions":["vacated","repair_accepted"],"returned":0}
+{"deposit_id":"DP9","tenant_id":"T09","lease_id":"L-liveB","amount":10000,"release_conditions":["vacated"],"returned":0}

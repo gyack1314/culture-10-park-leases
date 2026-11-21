@@ -1,0 +1,2 @@
+{"scenario_id":"SP1","kind":"split_lease","components":["A-9","A-10"],"start":"2026-05-20","end":"2027-05-20","monthly_rent":10000,"free_months":2}
+{"scenario_id":"SP2","kind":"renew","components":["A-9"],"start":"2026-05-20","end":"2027-05-20","monthly_rent":5200,"free_months":1}

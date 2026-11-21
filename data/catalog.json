@@ -1,0 +1,183 @@
+{
+  "synthetic": true,
+  "encoding": "UTF-8",
+  "tables": {
+    "space_components": {
+      "count": 24,
+      "fields": [
+        "component_id",
+        "building",
+        "area",
+        "floor"
+      ],
+      "primary_key": [
+        "component_id"
+      ],
+      "sha256": "179e5164dae8487b3cc801d3aed9533b44257bab3f6f98dcd35947bcb9b8a4cc"
+    },
+    "leases": {
+      "count": 146,
+      "fields": [
+        "lease_id",
+        "tenant_id",
+        "components",
+        "signed_at",
+        "start_date",
+        "end_date",
+        "notice_date",
+        "vacated_date",
+        "funding_cluster",
+        "tenant_type",
+        "observed_until",
+        "revision",
+        "renewal_of"
+      ],
+      "primary_key": [
+        "lease_id"
+      ],
+      "sha256": "7741387b59e67d38ebffb19958bf8dc9d54704c30d32a0410553c18b00fac0fb"
+    },
+    "rents": {
+      "count": 145,
+      "fields": [
+        "rent_id",
+        "lease_id",
+        "monthly_rent",
+        "free_months",
+        "start",
+        "end"
+      ],
+      "primary_key": [
+        "rent_id"
+      ],
+      "sha256": "5cfdc13e0d8ca3f08e29c97f53006669ec2a8100f8e34e1e65264c96d849fcbe"
+    },
+    "cash_receipts": {
+      "count": 240,
+      "fields": [
+        "receipt_id",
+        "lease_id",
+        "at",
+        "amount",
+        "purpose"
+      ],
+      "primary_key": [
+        "receipt_id"
+      ],
+      "sha256": "344a085091f935b12250648d6ebb164eb88d8d9d7d36ee763dd4af76307d3be2"
+    },
+    "deposits": {
+      "count": 2,
+      "fields": [
+        "deposit_id",
+        "tenant_id",
+        "lease_id",
+        "amount",
+        "release_conditions",
+        "returned"
+      ],
+      "primary_key": [
+        "deposit_id"
+      ],
+      "sha256": "234022f1e67ad39cf1cd2d07fc03b5be80da0fafbbd2ed65ffb7cb1ca0940308"
+    },
+    "restrictions": {
+      "count": 3,
+      "fields": [
+        "fund_id",
+        "building",
+        "purpose",
+        "amount"
+      ],
+      "primary_key": [
+        "fund_id"
+      ],
+      "sha256": "31f8a814a6246f6e886c0014834b20915b623965a92caf52015f2914f2420b9d"
+    },
+    "works_commitments": {
+      "count": 2,
+      "fields": [
+        "commitment_id",
+        "building",
+        "purpose",
+        "due_date",
+        "amount",
+        "accepted",
+        "paid"
+      ],
+      "primary_key": [
+        "commitment_id"
+      ],
+      "sha256": "3e309cf3b20853bf24e305417654e26abb6499c9c7bcb1e899b142abdf311e5d"
+    },
+    "changes": {
+      "count": 3,
+      "fields": [
+        "change_id",
+        "lease_id",
+        "at",
+        "kind",
+        "value"
+      ],
+      "primary_key": [
+        "change_id"
+      ],
+      "sha256": "f8be6265228dc07a73e7b6d9619614c416ae775f275398040a95786efef974d6"
+    },
+    "scenarios": {
+      "count": 2,
+      "fields": [
+        "scenario_id",
+        "kind",
+        "components",
+        "start",
+        "end",
+        "monthly_rent",
+        "free_months"
+      ],
+      "primary_key": [
+        "scenario_id"
+      ],
+      "sha256": "355e5eb68d2d460f0dfb83bc7ffd7ed6f2b994e99990c0cd1ced4cb4e03c165e"
+    },
+    "waivers": {
+      "count": 1,
+      "fields": [
+        "waiver_id",
+        "lease_id",
+        "start",
+        "end",
+        "approved_at",
+        "amount"
+      ],
+      "primary_key": [
+        "waiver_id"
+      ],
+      "sha256": "577776a76a473ab50e91de8f28bd845981f89f5fd733847d44bc95153f6538e0"
+    },
+    "returns": {
+      "count": 1,
+      "fields": [
+        "return_id",
+        "deposit_id",
+        "at",
+        "amount"
+      ],
+      "primary_key": [
+        "return_id"
+      ],
+      "sha256": "bcff585f46e80e818048a2608bb2521c8d30e45cc35db35fcb5f714c5c70afaa"
+    },
+    "cutoffs": {
+      "count": 3,
+      "fields": [
+        "cutoff_id",
+        "date"
+      ],
+      "primary_key": [
+        "cutoff_id"
+      ],
+      "sha256": "d9ac67edd7ef78403bec8ed5f0d68b29d0810aff17e69840486f0bd5a9710d75"
+    }
+  }
+}
